@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  CLICKERGAME
-//jjjjjj
+//jjjjjj HELLO
 //  Created by Samantha Galati 2019 on 5/8/19.
 //  Copyright © 2019 Samantha Galati 2019. All rights reserved.
 //
