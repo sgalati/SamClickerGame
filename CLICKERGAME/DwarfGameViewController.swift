@@ -9,11 +9,22 @@
 import UIKit
 
 class DwarfGameViewController: UIViewController {
-
+    var counter2: Int!
+    func updateLabel2() {
+        dwarfLabel.text = String(counter2)
+    }
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        counter2 = 0
 
         // Do any additional setup after loading the view.
+    }
+    @IBOutlet weak var dwarfLabel: UILabel!
+    @IBAction func dwarfButtonClicked(_ sender: UIButton) {
+        counter2 = counter2 + 1
+        updateLabel2()
     }
     
 
