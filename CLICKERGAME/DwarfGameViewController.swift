@@ -14,11 +14,16 @@ class DwarfGameViewController: UIViewController {
         dwarfLabel.text = String(counter2)
     }
     
+    @IBOutlet weak var gifBackground: UIImageView!
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         counter2 = 0
 
+         gifBackground.loadGif(name: "SpaceBackground")
+        
         // Do any additional setup after loading the view.
     }
     @IBOutlet weak var dwarfLabel: UILabel!
