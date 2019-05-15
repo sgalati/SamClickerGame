@@ -96,24 +96,41 @@
                                 <state key="normal" title="UPGRADE">
                                     <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="upgradeButton:" destination="Ubo-Cv-ZT1" eventType="touchUpInside" id="rtA-ef-JaG"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RX2-7Q-kI0">
+                                <rect key="frame" x="108" y="556" width="158" height="25.5"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="LFy-ui-dtI" firstAttribute="trailing" secondItem="RX2-7Q-kI0" secondAttribute="trailing" constant="109" id="4Tm-QT-8s6"/>
+                            <constraint firstItem="RX2-7Q-kI0" firstAttribute="top" secondItem="3Te-QB-xDi" secondAttribute="bottom" constant="8" id="4om-AN-LRf"/>
+                            <constraint firstItem="RX2-7Q-kI0" firstAttribute="top" secondItem="3Te-QB-xDi" secondAttribute="bottom" constant="8" id="8bR-XX-gDr"/>
+                            <constraint firstItem="LFy-ui-dtI" firstAttribute="trailing" secondItem="3Te-QB-xDi" secondAttribute="trailing" constant="131" id="8cC-mT-qfE"/>
                             <constraint firstItem="ctL-gl-CbA" firstAttribute="centerX" secondItem="StY-Gp-Ddl" secondAttribute="centerX" id="91p-Tw-hRL"/>
                             <constraint firstItem="lHs-uv-X0g" firstAttribute="centerX" secondItem="StY-Gp-Ddl" secondAttribute="centerX" id="Cep-7c-qsl"/>
                             <constraint firstItem="LFy-ui-dtI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ctL-gl-CbA" secondAttribute="trailing" id="Dk5-WU-qb9"/>
                             <constraint firstItem="ctL-gl-CbA" firstAttribute="centerY" secondItem="lHs-uv-X0g" secondAttribute="centerY" constant="-29.5" id="GL0-iC-aQo"/>
                             <constraint firstItem="ctL-gl-CbA" firstAttribute="top" secondItem="StY-Gp-Ddl" secondAttribute="bottom" constant="8" id="GfG-pQ-dyc"/>
                             <constraint firstItem="lHs-uv-X0g" firstAttribute="top" secondItem="LFy-ui-dtI" secondAttribute="top" id="V9B-j7-aZD"/>
+                            <constraint firstItem="LFy-ui-dtI" firstAttribute="bottom" secondItem="RX2-7Q-kI0" secondAttribute="bottom" constant="85.5" id="Xbm-b7-ZCo"/>
                             <constraint firstItem="StY-Gp-Ddl" firstAttribute="top" secondItem="1mL-q4-wvu" secondAttribute="bottom" constant="45" id="XyL-e9-Ara"/>
                             <constraint firstItem="LFy-ui-dtI" firstAttribute="trailing" secondItem="1mL-q4-wvu" secondAttribute="trailing" constant="8" id="cFD-Qs-KEg"/>
                             <constraint firstItem="1mL-q4-wvu" firstAttribute="top" secondItem="LFy-ui-dtI" secondAttribute="top" constant="30" id="dUa-GE-hvO"/>
                             <constraint firstItem="3Te-QB-xDi" firstAttribute="top" secondItem="ctL-gl-CbA" secondAttribute="bottom" constant="37" id="gNa-Zm-8Lm"/>
                             <constraint firstItem="LFy-ui-dtI" firstAttribute="bottom" secondItem="ctL-gl-CbA" secondAttribute="bottom" constant="197" id="hhF-1u-xYx"/>
+                            <constraint firstItem="3Te-QB-xDi" firstAttribute="top" secondItem="ctL-gl-CbA" secondAttribute="bottom" constant="37" id="lt6-qK-89I"/>
                             <constraint firstItem="lHs-uv-X0g" firstAttribute="centerX" secondItem="3Te-QB-xDi" secondAttribute="centerX" id="pAl-rq-2mP"/>
                             <constraint firstItem="ctL-gl-CbA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LFy-ui-dtI" secondAttribute="leading" id="tTV-Cl-6EP"/>
+                            <constraint firstItem="3Te-QB-xDi" firstAttribute="leading" secondItem="LFy-ui-dtI" secondAttribute="leading" constant="131" id="trQ-kp-ZPP"/>
                             <constraint firstItem="lHs-uv-X0g" firstAttribute="leading" secondItem="yQV-mv-a08" secondAttribute="leading" id="tvD-qU-Qsv"/>
+                            <constraint firstItem="RX2-7Q-kI0" firstAttribute="leading" secondItem="LFy-ui-dtI" secondAttribute="leading" constant="108" id="uD3-GJ-yaF"/>
                             <constraint firstItem="1mL-q4-wvu" firstAttribute="leading" secondItem="yQV-mv-a08" secondAttribute="leadingMargin" id="x7E-zu-mhQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LFy-ui-dtI"/>
@@ -121,6 +138,7 @@
                     <connections>
                         <outlet property="dwarfLabel" destination="StY-Gp-Ddl" id="o6o-D2-bYH"/>
                         <outlet property="gifBackground" destination="lHs-uv-X0g" id="hwh-ax-75w"/>
+                        <outlet property="upgradeText" destination="RX2-7Q-kI0" id="CgH-mr-RpQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bev-7f-vah" userLabel="First Responder" sceneMemberID="firstResponder"/>
