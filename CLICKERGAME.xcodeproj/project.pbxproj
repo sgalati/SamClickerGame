@@ -16,6 +16,7 @@
 		8391B0BD22834838000FAB09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8391B0BB22834838000FAB09 /* LaunchScreen.storyboard */; };
 		83E212692289DE1000A8D50C /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E212672289DE1000A8D50C /* UIImage+Gif.swift */; };
 		83E2126A2289DE1000A8D50C /* SpaceBackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83E212682289DE1000A8D50C /* SpaceBackground.gif */; };
+		9C154F7A228DD36D00BBD706 /* FoxStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C154F79228DD36D00BBD706 /* FoxStoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8391B0BE22834838000FAB09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83E212672289DE1000A8D50C /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		83E212682289DE1000A8D50C /* SpaceBackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SpaceBackground.gif; sourceTree = "<group>"; };
+		9C154F79228DD36D00BBD706 /* FoxStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxStoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				8391B0B222834837000FAB09 /* AppDelegate.swift */,
 				8391B0B422834837000FAB09 /* ViewController.swift */,
 				8391B0B622834837000FAB09 /* Main.storyboard */,
+				9C154F79228DD36D00BBD706 /* FoxStoreViewController.swift */,
 				8355ADF922849668009A4AED /* FoxGameViewController.swift */,
 				8355ADFB22849679009A4AED /* DwarfGameViewController.swift */,
 				8391B0B922834838000FAB09 /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 				8355ADFC22849679009A4AED /* DwarfGameViewController.swift in Sources */,
 				8391B0B322834837000FAB09 /* AppDelegate.swift in Sources */,
 				83E212692289DE1000A8D50C /* UIImage+Gif.swift in Sources */,
+				9C154F7A228DD36D00BBD706 /* FoxStoreViewController.swift in Sources */,
 				8355ADFA22849668009A4AED /* FoxGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

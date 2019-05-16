@@ -153,27 +153,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PT0-XO-B3X">
-                                <rect key="frame" x="166" y="166" width="44" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ij-pN-n4H">
+                                <rect key="frame" x="67" y="102" width="240" height="49.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITg-RT-azS">
-                                <rect key="frame" x="36" y="202" width="352" height="288"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="red-fox-clipart-137817-201755"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJa-cS-ANh">
+                                <rect key="frame" x="29" y="278" width="317" height="235"/>
+                                <state key="normal" image="RedFox"/>
                                 <connections>
-                                    <action selector="foxButtonClicked:" destination="eJY-Oo-vO5" eventType="touchUpInside" id="roI-xN-tWC"/>
+                                    <action selector="foxTapped:" destination="eJY-Oo-vO5" eventType="touchUpInside" id="bNS-ec-eSr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOB-UB-f36">
+                                <rect key="frame" x="318" y="617" width="37" height="30"/>
+                                <state key="normal" title="Store"/>
+                                <connections>
+                                    <segue destination="4xC-my-4Ro" kind="show" id="AGk-4A-FoS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BJa-cS-ANh" firstAttribute="top" secondItem="5Ij-pN-n4H" secondAttribute="bottom" constant="29.5" id="8Fy-Vi-WZI"/>
+                            <constraint firstItem="BJa-cS-ANh" firstAttribute="leading" secondItem="Xms-SS-K1e" secondAttribute="leading" constant="29" id="A2c-Lc-oZ8"/>
+                            <constraint firstItem="Xms-SS-K1e" firstAttribute="trailing" secondItem="vOB-UB-f36" secondAttribute="trailing" constant="20" id="AMe-ix-1kw"/>
+                            <constraint firstItem="vOB-UB-f36" firstAttribute="top" secondItem="BJa-cS-ANh" secondAttribute="bottom" constant="104" id="SUS-ym-QIl"/>
+                            <constraint firstItem="5Ij-pN-n4H" firstAttribute="leading" secondItem="Xms-SS-K1e" secondAttribute="leading" constant="67" id="UXT-dX-R6N"/>
+                            <constraint firstItem="Xms-SS-K1e" firstAttribute="trailing" secondItem="BJa-cS-ANh" secondAttribute="trailing" constant="29" id="gWr-Ww-raD"/>
+                            <constraint firstItem="Xms-SS-K1e" firstAttribute="trailing" secondItem="5Ij-pN-n4H" secondAttribute="trailing" constant="68" id="lNE-cR-I2e"/>
+                            <constraint firstItem="Xms-SS-K1e" firstAttribute="bottom" secondItem="vOB-UB-f36" secondAttribute="bottom" constant="20" id="thW-vK-46d"/>
+                            <constraint firstItem="5Ij-pN-n4H" firstAttribute="top" secondItem="Xms-SS-K1e" secondAttribute="top" constant="38" id="yGW-Xz-EVh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Xms-SS-K1e"/>
                     </view>
                     <connections>
-                        <outlet property="foxLabel" destination="PT0-XO-B3X" id="Po0-iC-QKO"/>
+                        <outlet property="pointsLabel" destination="5Ij-pN-n4H" id="hpO-xa-cbf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w3M-cP-Ad9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -198,9 +214,75 @@
             </objects>
             <point key="canvasLocation" x="-204" y="134"/>
         </scene>
+        <!--Fox Store View Controller-->
+        <scene sceneID="MXN-po-ert">
+            <objects>
+                <viewController id="4xC-my-4Ro" customClass="FoxStoreViewController" customModule="CLICKERGAME" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ms3-my-lIs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoP-il-PWU">
+                                <rect key="frame" x="0.0" y="20" width="375" height="87"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="4xC-my-4Ro" eventType="touchUpInside" id="v0S-0h-tn2"/>
+                                    <segue destination="eJY-Oo-vO5" kind="show" id="xk7-Qh-RNh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCW-Ot-ecK">
+                                <rect key="frame" x="16" y="115" width="165" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Increase Earnings"/>
+                                <connections>
+                                    <action selector="increaseEarningsPressed:" destination="4xC-my-4Ro" eventType="touchUpInside" id="oI3-d1-0AU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGt-xp-9ag">
+                                <rect key="frame" x="189" y="115" width="170" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Increase Bonus Rabbit"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHq-wq-JKM">
+                                <rect key="frame" x="16" y="350" width="165" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vst-82-edd">
+                                <rect key="frame" x="189" y="350" width="170" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNO-sP-B0K">
+                                <rect key="frame" x="67" y="580" width="240" height="49.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eoP-il-PWU" firstAttribute="trailing" secondItem="k3k-qF-K73" secondAttribute="trailing" id="D8c-dU-CJb"/>
+                            <constraint firstItem="eoP-il-PWU" firstAttribute="leading" secondItem="k3k-qF-K73" secondAttribute="leading" id="QvN-TT-Tkm"/>
+                            <constraint firstItem="eoP-il-PWU" firstAttribute="top" secondItem="k3k-qF-K73" secondAttribute="top" id="fVq-vz-bxf"/>
+                            <constraint firstItem="k3k-qF-K73" firstAttribute="bottom" secondItem="eoP-il-PWU" secondAttribute="bottom" constant="560" id="pJb-Wo-5O1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k3k-qF-K73"/>
+                    </view>
+                    <connections>
+                        <outlet property="pointsLabel" destination="GNO-sP-B0K" id="A9Y-ds-6pI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xco-Cm-AGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2872.8000000000002" y="-367.46626686656674"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="RedFox" width="600" height="499"/>
         <image name="YellowDwarf" width="2286" height="2228"/>
-        <image name="red-fox-clipart-137817-201755" width="298" height="288"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xk7-Qh-RNh"/>
+    </inferredMetricsTieBreakers>
 </document>
