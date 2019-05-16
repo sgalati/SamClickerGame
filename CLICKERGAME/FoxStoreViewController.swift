@@ -11,7 +11,7 @@ import UIKit
 class FoxStoreViewController: UIViewController {
     var points:Int = 0
     var pointIncrease:Int = 0
-    var increaseCost:Int = 100
+    var increaseCost:Int = 10
     var bonusRabbitCost:Int = 100
     
     @IBOutlet weak var pointsLabel: UILabel!
@@ -35,6 +35,8 @@ class FoxStoreViewController: UIViewController {
         let destinationVC=segue.destination as! FoxGameViewController
         destinationVC.points=points
         destinationVC.pointIncrease=pointIncrease
+        print(destinationVC.pointIncrease)
+        print(pointIncrease)
         
     }
     

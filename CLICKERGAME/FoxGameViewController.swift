@@ -10,33 +10,26 @@ import UIKit
 
 class FoxGameViewController: UIViewController {
     
-    var counter: Int!
-    func updateLabel() {
-    foxLabel.text = String(counter)
-    }
-
+    var points = 0
+    var pointIncrease = 1
+    
+    
+    @IBOutlet weak var pointsLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        counter = 0
-
-        // Do any additional setup after loading the view.
-    }
-    @IBOutlet weak var foxLabel: UILabel!
-    
-    @IBAction func foxButtonClicked(_ sender: UIButton) {
-        counter = counter + 1
-        updateLabel()
+        pointsLabel.text="\(points)"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    @IBAction func foxTapped(_ sender: Any){
+        points+=pointIncrease
+        pointsLabel.text="\(points)"
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let destinationVC=segue.destination as! FoxStoreViewController
+        destinationVC.points=points
+        destinationVC.pointIncrease=pointIncrease
     }
-    */
-
 }
