@@ -153,20 +153,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ij-pN-n4H">
-                                <rect key="frame" x="67" y="102" width="240" height="49.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ij-pN-n4H">
+                                <rect key="frame" x="67" y="58" width="240" height="49.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJa-cS-ANh">
-                                <rect key="frame" x="29" y="278" width="317" height="235"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJa-cS-ANh">
+                                <rect key="frame" x="29" y="137" width="317" height="376"/>
                                 <state key="normal" image="RedFox"/>
                                 <connections>
                                     <action selector="foxTapped:" destination="eJY-Oo-vO5" eventType="touchUpInside" id="bNS-ec-eSr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOB-UB-f36">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOB-UB-f36">
                                 <rect key="frame" x="318" y="617" width="37" height="30"/>
                                 <state key="normal" title="Store"/>
                                 <connections>
@@ -277,6 +277,7 @@
         <image name="YellowDwarf" width="2286" height="2228"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="AGk-4A-FoS"/>
         <segue reference="xk7-Qh-RNh"/>
     </inferredMetricsTieBreakers>
 </document>

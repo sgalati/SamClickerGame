@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class DwarfGameViewController: UIViewController {
+    
+    //line below brought in from stack overflow
+    var AudioPlayer = AVAudioPlayer()
+    
     var counter2: Int!
     var clicks: Int!
     var cost: Int!
@@ -24,6 +29,15 @@ class DwarfGameViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        //lines below brought in from stack overflow
+        let AssortedMusics = NSURL(fileURLWithPath: Bundle.main.path(forResource: "RainbowRoad", ofType: "mp3")!)
+        AudioPlayer = try! AVAudioPlayer(contentsOf: AssortedMusics as URL)
+        AudioPlayer.prepareToPlay()
+        AudioPlayer.numberOfLoops = -1
+        AudioPlayer.play()
+        //lines above brought in from stack overflow
+        
         counter2 = 0
         
         gifBackground.loadGif(name: "SpaceBackground")
