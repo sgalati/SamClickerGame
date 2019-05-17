@@ -82,7 +82,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="269" id="kG6-Nd-YYc"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="YellowDwarf">
+                                <state key="normal" image="YellowDwarf">
                                     <color key="titleColor" red="0.99546209060000002" green="1" blue="0.98116088960000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -136,8 +136,10 @@
                         <viewLayoutGuide key="safeArea" id="LFy-ui-dtI"/>
                     </view>
                     <connections>
+                        <outlet property="dwarfImage" destination="ctL-gl-CbA" id="iSk-qE-Fx3"/>
                         <outlet property="dwarfLabel" destination="StY-Gp-Ddl" id="o6o-D2-bYH"/>
                         <outlet property="gifBackground" destination="lHs-uv-X0g" id="hwh-ax-75w"/>
+                        <outlet property="lolDivyaNoob" destination="1mL-q4-wvu" id="iUM-hX-mFD"/>
                         <outlet property="upgradeText" destination="RX2-7Q-kI0" id="CgH-mr-RpQ"/>
                     </connections>
                 </viewController>
@@ -277,7 +279,6 @@
         <image name="YellowDwarf" width="2286" height="2228"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AGk-4A-FoS"/>
         <segue reference="xk7-Qh-RNh"/>
     </inferredMetricsTieBreakers>
 </document>

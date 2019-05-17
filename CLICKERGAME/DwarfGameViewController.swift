@@ -23,19 +23,21 @@ class DwarfGameViewController: UIViewController {
     }
     
     @IBOutlet weak var gifBackground: UIImageView!
+    @IBOutlet weak var lolDivyaNoob: UILabel!
     
     @IBOutlet weak var upgradeText: UILabel!
+    @IBOutlet weak var dwarfImage: UIButton!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
         //lines below brought in from stack overflow
-        let AssortedMusics = NSURL(fileURLWithPath: Bundle.main.path(forResource: "RainbowRoad", ofType: "mp3")!)
-        AudioPlayer = try! AVAudioPlayer(contentsOf: AssortedMusics as URL)
-        AudioPlayer.prepareToPlay()
-        AudioPlayer.numberOfLoops = -1
-        AudioPlayer.play()
+        //let AssortedMusics = NSURL(fileURLWithPath: Bundle.main.path(forResource: "RainbowRoad", ofType: "mp3")!)
+        //AudioPlayer = try! AVAudioPlayer(contentsOf: AssortedMusics as URL)
+        //AudioPlayer.prepareToPlay()
+        //AudioPlayer.numberOfLoops = -1
+        //AudioPlayer.play()
         //lines above brought in from stack overflow
         
         counter2 = 0
@@ -72,7 +74,7 @@ class DwarfGameViewController: UIViewController {
                 clicks = 4
                 cost = 300
                 upgrades = 2
-                upgradeText.text = "Cost: \(cost!)"
+                upgradeText.text = "White Dwarf: \(cost!)"
                 updateLabel2()
             }
         }
@@ -84,6 +86,7 @@ class DwarfGameViewController: UIViewController {
                 cost = 1000
                 upgrades = 3
                 upgradeText.text = "Cost: \(cost!)"
+                dwarfImage.setImage(UIImage(named: "WhiteDwarf"), for: UIControlState.normal)
                 updateLabel2()
             }
         }
@@ -94,7 +97,20 @@ class DwarfGameViewController: UIViewController {
                 clicks = 25
                 cost = 2500
                 upgrades = 4
-                upgradeText.text = "Get red dwarf: \(cost!)"
+                upgradeText.text = "Red dwarf: \(cost!)"
+                updateLabel2()
+            }
+        }
+        else if upgrades == 4
+        {
+            if counter2 >= 1000 {
+                counter2 = counter2 - 1000
+                clicks = 25
+                cost = 9999999999
+                upgrades = 5
+                dwarfImage.setImage(UIImage(named: "RedDwarf"), for: UIControlState.normal)
+                upgradeText.text = "No more upgrades!"
+                lolDivyaNoob.text = "If you aren't Divya, you win!"
                 updateLabel2()
             }
         }

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		834C5DDD228F1D1D009C3E21 /* RainbowRoad.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 834C5DDB228F1D1D009C3E21 /* RainbowRoad.mp3 */; };
-		834C5DDE228F1D1D009C3E21 /* WhatDoesTheFoxSay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 834C5DDC228F1D1D009C3E21 /* WhatDoesTheFoxSay.mp3 */; };
 		8355ADFA22849668009A4AED /* FoxGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355ADF922849668009A4AED /* FoxGameViewController.swift */; };
 		8355ADFC22849679009A4AED /* DwarfGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355ADFB22849679009A4AED /* DwarfGameViewController.swift */; };
 		8391B0B322834837000FAB09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391B0B222834837000FAB09 /* AppDelegate.swift */; };
@@ -22,8 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		834C5DDB228F1D1D009C3E21 /* RainbowRoad.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = RainbowRoad.mp3; path = ../../Desktop/RainbowRoad.mp3; sourceTree = "<group>"; };
-		834C5DDC228F1D1D009C3E21 /* WhatDoesTheFoxSay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = WhatDoesTheFoxSay.mp3; path = ../../Desktop/WhatDoesTheFoxSay.mp3; sourceTree = "<group>"; };
 		834C5DDF228F1D21009C3E21 /* WhatDoesTheFoxSay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WhatDoesTheFoxSay.mp3; sourceTree = "<group>"; };
 		834C5DE0228F1D24009C3E21 /* RainbowRoad.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RainbowRoad.mp3; sourceTree = "<group>"; };
 		8355ADF922849668009A4AED /* FoxGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxGameViewController.swift; sourceTree = "<group>"; };
@@ -54,8 +50,6 @@
 		8391B0A622834837000FAB09 = {
 			isa = PBXGroup;
 			children = (
-				834C5DDB228F1D1D009C3E21 /* RainbowRoad.mp3 */,
-				834C5DDC228F1D1D009C3E21 /* WhatDoesTheFoxSay.mp3 */,
 				8391B0B122834837000FAB09 /* CLICKERGAME */,
 				8391B0B022834837000FAB09 /* Products */,
 			);
@@ -72,8 +66,8 @@
 		8391B0B122834837000FAB09 /* CLICKERGAME */ = {
 			isa = PBXGroup;
 			children = (
-				834C5DE0228F1D24009C3E21 /* RainbowRoad.mp3 */,
 				834C5DDF228F1D21009C3E21 /* WhatDoesTheFoxSay.mp3 */,
+				834C5DE0228F1D24009C3E21 /* RainbowRoad.mp3 */,
 				83E212682289DE1000A8D50C /* SpaceBackground.gif */,
 				83E212672289DE1000A8D50C /* UIImage+Gif.swift */,
 				8391B0B222834837000FAB09 /* AppDelegate.swift */,
@@ -148,11 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8391B0BD22834838000FAB09 /* LaunchScreen.storyboard in Resources */,
-				834C5DDE228F1D1D009C3E21 /* WhatDoesTheFoxSay.mp3 in Resources */,
 				8391B0BA22834838000FAB09 /* Assets.xcassets in Resources */,
 				8391B0B822834837000FAB09 /* Main.storyboard in Resources */,
 				83E2126A2289DE1000A8D50C /* SpaceBackground.gif in Resources */,
-				834C5DDD228F1D1D009C3E21 /* RainbowRoad.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
