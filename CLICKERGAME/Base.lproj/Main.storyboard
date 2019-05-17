@@ -155,22 +155,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cartoon-forest-landscape-vector-23310430" translatesAutoresizingMaskIntoConstraints="NO" id="3fd-5S-Lon">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ij-pN-n4H">
                                 <rect key="frame" x="67" y="58" width="240" height="49.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="38"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.31062877799957744" blue="0.076619502383205029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJa-cS-ANh">
-                                <rect key="frame" x="29" y="137" width="317" height="376"/>
+                                <rect key="frame" x="29" y="137" width="317" height="358"/>
                                 <state key="normal" image="RedFox"/>
                                 <connections>
                                     <action selector="foxTapped:" destination="eJY-Oo-vO5" eventType="touchUpInside" id="bNS-ec-eSr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOB-UB-f36">
-                                <rect key="frame" x="318" y="617" width="37" height="30"/>
-                                <state key="normal" title="Store"/>
+                                <rect key="frame" x="284" y="599" width="71" height="48"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
+                                <state key="normal" title="Store">
+                                    <color key="titleColor" red="1" green="0.31062877799999999" blue="0.076619502379999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="4xC-my-4Ro" kind="show" id="AGk-4A-FoS"/>
                                 </connections>
@@ -181,10 +187,14 @@
                             <constraint firstItem="BJa-cS-ANh" firstAttribute="top" secondItem="5Ij-pN-n4H" secondAttribute="bottom" constant="29.5" id="8Fy-Vi-WZI"/>
                             <constraint firstItem="BJa-cS-ANh" firstAttribute="leading" secondItem="Xms-SS-K1e" secondAttribute="leading" constant="29" id="A2c-Lc-oZ8"/>
                             <constraint firstItem="Xms-SS-K1e" firstAttribute="trailing" secondItem="vOB-UB-f36" secondAttribute="trailing" constant="20" id="AMe-ix-1kw"/>
+                            <constraint firstItem="3fd-5S-Lon" firstAttribute="leading" secondItem="Xms-SS-K1e" secondAttribute="leading" id="FLW-TP-Bvh"/>
                             <constraint firstItem="vOB-UB-f36" firstAttribute="top" secondItem="BJa-cS-ANh" secondAttribute="bottom" constant="104" id="SUS-ym-QIl"/>
                             <constraint firstItem="5Ij-pN-n4H" firstAttribute="leading" secondItem="Xms-SS-K1e" secondAttribute="leading" constant="67" id="UXT-dX-R6N"/>
+                            <constraint firstItem="3fd-5S-Lon" firstAttribute="top" secondItem="ufd-h9-3i2" secondAttribute="top" id="WsM-QJ-tMo"/>
+                            <constraint firstItem="3fd-5S-Lon" firstAttribute="bottom" secondItem="Xms-SS-K1e" secondAttribute="bottom" id="bzL-f0-mHt"/>
                             <constraint firstItem="Xms-SS-K1e" firstAttribute="trailing" secondItem="BJa-cS-ANh" secondAttribute="trailing" constant="29" id="gWr-Ww-raD"/>
                             <constraint firstItem="Xms-SS-K1e" firstAttribute="trailing" secondItem="5Ij-pN-n4H" secondAttribute="trailing" constant="68" id="lNE-cR-I2e"/>
+                            <constraint firstItem="3fd-5S-Lon" firstAttribute="trailing" secondItem="Xms-SS-K1e" secondAttribute="trailing" id="orI-Or-9mq"/>
                             <constraint firstItem="Xms-SS-K1e" firstAttribute="bottom" secondItem="vOB-UB-f36" secondAttribute="bottom" constant="20" id="thW-vK-46d"/>
                             <constraint firstItem="5Ij-pN-n4H" firstAttribute="top" secondItem="Xms-SS-K1e" secondAttribute="top" constant="38" id="yGW-Xz-EVh"/>
                         </constraints>
@@ -227,7 +237,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCW-Ot-ecK">
                                 <rect key="frame" x="16" y="115" width="165" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Increase Earnings"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                                <state key="normal" title="Increase Earnings">
+                                    <color key="titleColor" red="1" green="0.31062877799999999" blue="0.076619502379999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="increaseEarningsPressed:" destination="4xC-my-4Ro" eventType="touchUpInside" id="oI3-d1-0AU"/>
                                 </connections>
@@ -235,7 +248,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGt-xp-9ag">
                                 <rect key="frame" x="189" y="115" width="170" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Increase Bonus Rabbit"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="Increase Bonus Rabbit">
+                                    <color key="titleColor" red="1" green="0.31062877799999999" blue="0.076619502379999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHq-wq-JKM">
                                 <rect key="frame" x="16" y="350" width="165" height="197"/>
@@ -244,25 +260,40 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vst-82-edd">
                                 <rect key="frame" x="189" y="350" width="170" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="0.31062877799999999" blue="0.076619502379999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNO-sP-B0K">
                                 <rect key="frame" x="67" y="580" width="240" height="49.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="38"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.31062877799999999" blue="0.076619502379999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoP-il-PWU">
                                 <rect key="frame" x="16" y="50" width="343" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="43"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="0.31062877799999999" blue="0.076619502379999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="eJY-Oo-vO5" kind="show" id="xk7-Qh-RNh"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cartoon-forest-landscape-vector-23310430" translatesAutoresizingMaskIntoConstraints="NO" id="fpr-F7-1p7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fpr-F7-1p7" firstAttribute="trailing" secondItem="k3k-qF-K73" secondAttribute="trailing" id="4zU-4d-d3Q"/>
+                            <constraint firstItem="fpr-F7-1p7" firstAttribute="top" secondItem="ms3-my-lIs" secondAttribute="top" id="CRq-te-zd3"/>
+                            <constraint firstItem="fpr-F7-1p7" firstAttribute="leading" secondItem="k3k-qF-K73" secondAttribute="leading" id="KjW-oD-L4B"/>
+                            <constraint firstItem="fpr-F7-1p7" firstAttribute="bottom" secondItem="k3k-qF-K73" secondAttribute="bottom" id="cpM-cs-5dM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="k3k-qF-K73"/>
                     </view>
                     <connections>
@@ -277,6 +308,7 @@
     <resources>
         <image name="RedFox" width="600" height="499"/>
         <image name="YellowDwarf" width="2286" height="2228"/>
+        <image name="cartoon-forest-landscape-vector-23310430" width="994" height="674"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xk7-Qh-RNh"/>
