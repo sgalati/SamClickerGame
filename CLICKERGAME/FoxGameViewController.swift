@@ -8,13 +8,11 @@
 
 import UIKit
 
-
 class FoxGameViewController: UIViewController {
-    
-    
     
     var points = 0
     var pointIncrease = 1
+    var increaseCost:Int = 10
     
     
     @IBOutlet weak var pointsLabel: UILabel!
@@ -22,7 +20,6 @@ class FoxGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         pointsLabel.text="\(points)"
-        
     }
     
     
@@ -35,5 +32,6 @@ class FoxGameViewController: UIViewController {
         let destinationVC=segue.destination as! FoxStoreViewController
         destinationVC.points=points
         destinationVC.pointIncrease=pointIncrease
+        destinationVC.increaseCost=increaseCost
     }
 }
