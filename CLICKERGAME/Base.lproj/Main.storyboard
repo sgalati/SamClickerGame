@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="stage" translatesAutoresizingMaskIntoConstraints="NO" id="O1U-j4-JgC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stage" translatesAutoresizingMaskIntoConstraints="NO" id="O1U-j4-JgC">
                                 <rect key="frame" x="0.0" y="64" width="375" height="621"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNU-OV-B8A">
@@ -54,15 +54,19 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="O1U-j4-JgC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4Jo-86-YFk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3qA-bP-Gh2" secondAttribute="trailing" constant="92" id="8Xx-Nd-hmG"/>
                             <constraint firstItem="3qA-bP-Gh2" firstAttribute="top" secondItem="nNU-OV-B8A" secondAttribute="bottom" constant="67" id="AwT-sL-tYJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nNU-OV-B8A" secondAttribute="trailing" constant="107" id="HZR-Nf-o5e"/>
                             <constraint firstItem="nNU-OV-B8A" firstAttribute="top" secondItem="eN7-ED-eXM" secondAttribute="bottom" constant="25" id="ITn-Mn-EoL"/>
                             <constraint firstItem="nNU-OV-B8A" firstAttribute="top" secondItem="eN7-ED-eXM" secondAttribute="bottom" constant="25" id="MFl-QH-2l5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eN7-ED-eXM" secondAttribute="trailing" constant="10" id="N4M-g2-LMa"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="O1U-j4-JgC" secondAttribute="bottom" constant="-18" id="Oog-hw-glc"/>
                             <constraint firstItem="3qA-bP-Gh2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="UlR-6e-sMv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3qA-bP-Gh2" secondAttribute="bottom" constant="284" id="WZ4-S8-zqC"/>
                             <constraint firstItem="nNU-OV-B8A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="Xog-sJ-yWG"/>
+                            <constraint firstItem="O1U-j4-JgC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZCp-4E-hGS"/>
+                            <constraint firstItem="nNU-OV-B8A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109" id="aaz-Ak-lZx"/>
                             <constraint firstItem="3qA-bP-Gh2" firstAttribute="centerX" secondItem="O1U-j4-JgC" secondAttribute="centerX" id="e5o-XJ-AIq"/>
                             <constraint firstItem="3qA-bP-Gh2" firstAttribute="top" secondItem="nNU-OV-B8A" secondAttribute="bottom" constant="67" id="jNh-XA-w5w"/>
                             <constraint firstItem="eN7-ED-eXM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="mBj-RG-0Gb"/>
@@ -88,7 +92,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="602"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StY-Gp-Ddl">
-                                <rect key="frame" x="179.5" y="172" width="16" height="21"/>
+                                <rect key="frame" x="180" y="172" width="16" height="21"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="27"/>
                                 <color key="textColor" red="0.99546209060000002" green="1" blue="0.98116088960000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -114,8 +118,17 @@
                                     <action selector="dwarfButtonClicked:" destination="Ubo-Cv-ZT1" eventType="touchUpInside" id="szx-Fn-iBJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Te-QB-xDi">
-                                <rect key="frame" x="131" y="507" width="113" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RX2-7Q-kI0">
+                                <rect key="frame" x="108" y="556" width="158" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="1Ux-Dj-kfX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Te-QB-xDi">
+                                <rect key="frame" x="127" y="507" width="129" height="41"/>
                                 <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="24"/>
                                 <state key="normal" title="UPGRADE">
@@ -125,19 +138,13 @@
                                     <action selector="upgradeButton:" destination="Ubo-Cv-ZT1" eventType="touchUpInside" id="rtA-ef-JaG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cost: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RX2-7Q-kI0">
-                                <rect key="frame" x="108" y="556" width="158" height="25.5"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="21"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="LFy-ui-dtI" firstAttribute="trailing" secondItem="RX2-7Q-kI0" secondAttribute="trailing" constant="109" id="4Tm-QT-8s6"/>
                             <constraint firstItem="RX2-7Q-kI0" firstAttribute="top" secondItem="3Te-QB-xDi" secondAttribute="bottom" constant="8" id="4om-AN-LRf"/>
                             <constraint firstItem="RX2-7Q-kI0" firstAttribute="top" secondItem="3Te-QB-xDi" secondAttribute="bottom" constant="8" id="8bR-XX-gDr"/>
-                            <constraint firstItem="LFy-ui-dtI" firstAttribute="trailing" secondItem="3Te-QB-xDi" secondAttribute="trailing" constant="131" id="8cC-mT-qfE"/>
+                            <constraint firstItem="LFy-ui-dtI" firstAttribute="trailing" secondItem="3Te-QB-xDi" secondAttribute="trailing" constant="119" id="8cC-mT-qfE"/>
                             <constraint firstItem="ctL-gl-CbA" firstAttribute="centerX" secondItem="StY-Gp-Ddl" secondAttribute="centerX" id="91p-Tw-hRL"/>
                             <constraint firstItem="lHs-uv-X0g" firstAttribute="centerX" secondItem="StY-Gp-Ddl" secondAttribute="centerX" id="Cep-7c-qsl"/>
                             <constraint firstItem="LFy-ui-dtI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ctL-gl-CbA" secondAttribute="trailing" id="Dk5-WU-qb9"/>
@@ -151,9 +158,9 @@
                             <constraint firstItem="3Te-QB-xDi" firstAttribute="top" secondItem="ctL-gl-CbA" secondAttribute="bottom" constant="37" id="gNa-Zm-8Lm"/>
                             <constraint firstItem="LFy-ui-dtI" firstAttribute="bottom" secondItem="ctL-gl-CbA" secondAttribute="bottom" constant="197" id="hhF-1u-xYx"/>
                             <constraint firstItem="3Te-QB-xDi" firstAttribute="top" secondItem="ctL-gl-CbA" secondAttribute="bottom" constant="37" id="lt6-qK-89I"/>
-                            <constraint firstItem="lHs-uv-X0g" firstAttribute="centerX" secondItem="3Te-QB-xDi" secondAttribute="centerX" id="pAl-rq-2mP"/>
+                            <constraint firstItem="lHs-uv-X0g" firstAttribute="centerX" secondItem="3Te-QB-xDi" secondAttribute="centerX" constant="-4" id="pAl-rq-2mP"/>
                             <constraint firstItem="ctL-gl-CbA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LFy-ui-dtI" secondAttribute="leading" id="tTV-Cl-6EP"/>
-                            <constraint firstItem="3Te-QB-xDi" firstAttribute="leading" secondItem="LFy-ui-dtI" secondAttribute="leading" constant="131" id="trQ-kp-ZPP"/>
+                            <constraint firstItem="3Te-QB-xDi" firstAttribute="leading" secondItem="LFy-ui-dtI" secondAttribute="leading" constant="127" id="trQ-kp-ZPP"/>
                             <constraint firstItem="lHs-uv-X0g" firstAttribute="leading" secondItem="yQV-mv-a08" secondAttribute="leading" id="tvD-qU-Qsv"/>
                             <constraint firstItem="RX2-7Q-kI0" firstAttribute="leading" secondItem="LFy-ui-dtI" secondAttribute="leading" constant="108" id="uD3-GJ-yaF"/>
                             <constraint firstItem="1mL-q4-wvu" firstAttribute="leading" secondItem="yQV-mv-a08" secondAttribute="leadingMargin" id="x7E-zu-mhQ"/>
