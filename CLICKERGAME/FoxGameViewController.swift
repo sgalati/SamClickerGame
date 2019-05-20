@@ -7,12 +7,11 @@
 //
 
 import UIKit
-import AVFoundation
+
 
 class FoxGameViewController: UIViewController {
     
-    //line below brought in from stack overflow
-    var AudioPlayer = AVAudioPlayer()
+    
     
     var points = 0
     var pointIncrease = 1
@@ -24,13 +23,6 @@ class FoxGameViewController: UIViewController {
         super.viewDidLoad()
         pointsLabel.text="\(points)"
         
-        //lines below brought in from stack overflow
-        //let AssortedMusics = NSURL(fileURLWithPath: Bundle.main.path(forResource: "WhatDoesTheFoxSay", ofType: "mp3")!)
-        //AudioPlayer = try! AVAudioPlayer(contentsOf: AssortedMusics as URL)
-        //AudioPlayer.prepareToPlay()
-        //AudioPlayer.numberOfLoops = -1
-        //AudioPlayer.play()
-        //lines above brought in from stack overflow
     }
     
     

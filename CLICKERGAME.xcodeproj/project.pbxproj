@@ -20,8 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		834C5DDF228F1D21009C3E21 /* WhatDoesTheFoxSay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WhatDoesTheFoxSay.mp3; sourceTree = "<group>"; };
-		834C5DE0228F1D24009C3E21 /* RainbowRoad.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RainbowRoad.mp3; sourceTree = "<group>"; };
 		8355ADF922849668009A4AED /* FoxGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxGameViewController.swift; sourceTree = "<group>"; };
 		8355ADFB22849679009A4AED /* DwarfGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DwarfGameViewController.swift; sourceTree = "<group>"; };
 		8391B0AF22834837000FAB09 /* CLICKERGAME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLICKERGAME.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,8 +64,6 @@
 		8391B0B122834837000FAB09 /* CLICKERGAME */ = {
 			isa = PBXGroup;
 			children = (
-				834C5DDF228F1D21009C3E21 /* WhatDoesTheFoxSay.mp3 */,
-				834C5DE0228F1D24009C3E21 /* RainbowRoad.mp3 */,
 				83E212682289DE1000A8D50C /* SpaceBackground.gif */,
 				83E212672289DE1000A8D50C /* UIImage+Gif.swift */,
 				8391B0B222834837000FAB09 /* AppDelegate.swift */,

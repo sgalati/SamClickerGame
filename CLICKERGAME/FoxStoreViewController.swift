@@ -7,12 +7,11 @@
 //
 
 import UIKit
-import AVFoundation
+
 
 class FoxStoreViewController: UIViewController {
     
-    //line below brought in from stack overflow
-    var AudioPlayer = AVAudioPlayer()
+ 
 
     
     var points:Int = 0
@@ -26,13 +25,7 @@ class FoxStoreViewController: UIViewController {
         super.viewDidLoad()
         pointsLabel.text="\(points)"
         
-        //lines below brought in from stack overflow
-        let AssortedMusics = NSURL(fileURLWithPath: Bundle.main.path(forResource: "WhatDoesTheFoxSay", ofType: "mp3")!)
-        AudioPlayer = try! AVAudioPlayer(contentsOf: AssortedMusics as URL)
-        AudioPlayer.prepareToPlay()
-        AudioPlayer.numberOfLoops = -1
-        AudioPlayer.play()
-        //lines above brought in from stack overflow
+       
         
     }
     
