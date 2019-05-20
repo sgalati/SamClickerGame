@@ -119,7 +119,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RX2-7Q-kI0">
-                                <rect key="frame" x="108" y="556" width="158" height="26"/>
+                                <rect key="frame" x="25" y="556" width="324" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="1Ux-Dj-kfX"/>
                                 </constraints>
@@ -141,7 +141,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LFy-ui-dtI" firstAttribute="trailing" secondItem="RX2-7Q-kI0" secondAttribute="trailing" constant="109" id="4Tm-QT-8s6"/>
+                            <constraint firstItem="LFy-ui-dtI" firstAttribute="trailing" secondItem="RX2-7Q-kI0" secondAttribute="trailing" constant="26" id="4Tm-QT-8s6"/>
                             <constraint firstItem="RX2-7Q-kI0" firstAttribute="top" secondItem="3Te-QB-xDi" secondAttribute="bottom" constant="8" id="4om-AN-LRf"/>
                             <constraint firstItem="RX2-7Q-kI0" firstAttribute="top" secondItem="3Te-QB-xDi" secondAttribute="bottom" constant="8" id="8bR-XX-gDr"/>
                             <constraint firstItem="LFy-ui-dtI" firstAttribute="trailing" secondItem="3Te-QB-xDi" secondAttribute="trailing" constant="119" id="8cC-mT-qfE"/>
@@ -162,7 +162,7 @@
                             <constraint firstItem="ctL-gl-CbA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LFy-ui-dtI" secondAttribute="leading" id="tTV-Cl-6EP"/>
                             <constraint firstItem="3Te-QB-xDi" firstAttribute="leading" secondItem="LFy-ui-dtI" secondAttribute="leading" constant="127" id="trQ-kp-ZPP"/>
                             <constraint firstItem="lHs-uv-X0g" firstAttribute="leading" secondItem="yQV-mv-a08" secondAttribute="leading" id="tvD-qU-Qsv"/>
-                            <constraint firstItem="RX2-7Q-kI0" firstAttribute="leading" secondItem="LFy-ui-dtI" secondAttribute="leading" constant="108" id="uD3-GJ-yaF"/>
+                            <constraint firstItem="RX2-7Q-kI0" firstAttribute="leading" secondItem="LFy-ui-dtI" secondAttribute="leading" constant="25" id="uD3-GJ-yaF"/>
                             <constraint firstItem="1mL-q4-wvu" firstAttribute="leading" secondItem="yQV-mv-a08" secondAttribute="leadingMargin" id="x7E-zu-mhQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LFy-ui-dtI"/>
